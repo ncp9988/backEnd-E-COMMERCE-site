@@ -1,5 +1,5 @@
 const express = require('express');
-const { sequelize } = require('../../just-tech-news/models/Post');
+const sequelize  = require('./config/connection');
 const routes = require('./routes');
 // import sequelize connection
 
@@ -15,5 +15,5 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
-  }).catch(e => console.log("error with sync", e))
+  })
 });

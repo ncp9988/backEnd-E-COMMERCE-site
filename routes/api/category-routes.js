@@ -48,11 +48,7 @@ router.post('/', (req, res) => {
     category_name: req.body.category_name
   })
   .then(dbCategoryData => {
-    res.session.save(() => {
-      req.session.category_name= dbCategoryData.category_name
-
       res.json(dbCategoryData);
-    });
   })
   .catch(err => {
     console.log(err);
