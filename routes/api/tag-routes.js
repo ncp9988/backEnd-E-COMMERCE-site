@@ -48,11 +48,7 @@ router.post('/', (req, res) => {
     tag_name: req.body.tag_name
   })
   .then(dbTagData => {
-    res.session.save(() => {
-      req.session.tag_name= dbTagData.tag_name
-
       res.json(dbTagData);
-    });
   })
   .catch(err => {
     console.log(err);
