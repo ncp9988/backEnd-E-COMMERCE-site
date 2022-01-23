@@ -33,12 +33,9 @@
 #### Email
   <a href="mailto:ncp9988@gmail.com"> Please feel free to reach me if you have any questions</a>
 
-
-### Screenshot
-  ![Screenshot]()
   
 ### Video
-  [Video]()
+  [Video](https://watch.screencastify.com/v/mKCzuTdbwG87EVvLmeqz)
 
   
 
